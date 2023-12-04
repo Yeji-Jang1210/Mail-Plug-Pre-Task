@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  MainViewController.swift
 //  MailPlugBulletinBoard
 //
 //  Created by 장예지 on 11/28/23.
@@ -9,7 +9,7 @@ import UIKit
 import Alamofire
 import SnapKit
 
-class ViewController: UIViewController {
+class MainViewController: UIViewController {
     
     //MARK: - properties
     
@@ -166,7 +166,7 @@ class ViewController: UIViewController {
     }
 }
 
-extension ViewController: UITableViewDelegate, UITableViewDataSource {
+extension MainViewController: UITableViewDelegate, UITableViewDataSource {
     // UITableViewDataSource 메소드 구현
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if self.viewModel.numberOfSection == 0 {
@@ -212,7 +212,7 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     
 }
 
-extension ViewController: UIScrollViewDelegate {
+extension MainViewController: UIScrollViewDelegate {
     
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         

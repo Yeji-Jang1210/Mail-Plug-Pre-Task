@@ -202,8 +202,6 @@ extension SearchViewController: UITableViewDelegate, UITableViewDataSource {
                 fatalError("not found")
             }
             
-            
-            
             guard let data = viewModel?.filteringPosts[indexPath.row] else { return cell }
             
             switch viewModel.selectedSearchType {

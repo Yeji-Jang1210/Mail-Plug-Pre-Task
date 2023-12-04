@@ -24,7 +24,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             if let boardId = board?.first?.boardId, let boardTitle = board?.first?.displayName {
                 let viewModel = PostListViewModel(id: boardId, title: boardTitle)
                 let rootViewController = UIStoryboard(name: "Main", bundle: .main).instantiateInitialViewController { code in
-                    ViewController(coder: code, viewModel: viewModel)
+                    MainViewController(coder: code, viewModel: viewModel)
                 }
                 
                 // 루트 뷰 컨트롤러를 설정하여 윈도우에 할당
