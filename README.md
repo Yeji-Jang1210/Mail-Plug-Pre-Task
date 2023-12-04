@@ -98,7 +98,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 }
 ```
 
-받아온 Board Id와 displayTitle을 MainViewController에 표시하고, 해당 게시판의 Id를 사용하여 게시글 목록을 받아옵니다. MainViewController를 포함한 모든 View는 외부라이브러리인 Snapkit를 사용하여 Auto Layout에 맞게 구현하였습니다.
+받아온 Board Id와 displayTitle을 MainViewController에 표시하고, 해당 게시판의 Id를 사용하여 게시글 목록을 받아옵니다. MainViewController를 포함한 모든 View는 외부라이브러리인 Snapkit를 사용하여 Auto Layout에 맞게 구현하였습니다. 또한 당일일 경우 "HH:mm"형식으로, 어제일 경우 "어제", 그 외 시간일 경우 "yyyy-MM-dd"로 date를 포맷하여 표시합니다.
 
 MainViewController의 게시글 리스트는 Board와 같이 Post라는 구조체를 Codable을 채택하여 구현하였고, baseURL에 boardId, offset, limit정보를 받아오고 pagination 값을 통해 30개씩 화면에 띄울 수 있도록 구현하였습니다. UIScrollViewDelegate를 채택하여 Scroll이 맨 밑으로 가면 값을 받아옵니다. 
 아래 코드는 scrollView가 맨 밑으로 향했을 때 실행하는 코드와 ViewModel에 다음 페이지를 받아오도록 구현한 코드입니다.
