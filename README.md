@@ -57,7 +57,7 @@ struct Board: Codable{
 
 ---
 
-![MainViewController.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/7e923ea2-f11f-487a-b272-c20816c1932e/3c10c331-a493-403f-a2e4-85f62beb35bf/MainViewController.png)
+![MainViewController](https://github.com/Yeji-Jang1210/Mail-Plug-Pre-Task/assets/62092491/f4b42fb9-5877-4d57-b7fb-5712f095a334)
 
 MainViewController는 게시판이 선택 되어야 함으로 SceneDelegate에서 Board의 첫번째 배열의 값을 가져옵니다. 아래는 SceneDelegate에서 첫번째 값을 가져오는 기능을 구현한 코드입니다.
 
@@ -170,7 +170,7 @@ func loadNextPage(completion: @escaping () -> Void){
 
 ---
 
-![BoardListView.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/7e923ea2-f11f-487a-b272-c20816c1932e/a7d4aba8-e4a5-411b-8268-27a19350399e/BoardListView.png)
+![BoardListView](https://github.com/Yeji-Jang1210/Mail-Plug-Pre-Task/assets/62092491/a9cce8f3-b4e6-49de-96a7-3e1fa2f2d2cd)
 
 MainViewController에서 hambuger menu bar button을 클릭하면 BoardListViewController를 present로 띄웁니다. BoardListViewController에서 tableView cell을 선택했을 때, boardId와 board displayname정보를 받아오기 위하여 completionHandler를 사용하여 BoardListViewController가 dismiss됐을 때에도 데이터를 받아올 수 있도록 구현하였습니다.
 
@@ -205,7 +205,7 @@ MainViewController에서 hambuger menu bar button을 클릭하면 BoardListViewC
 
 ---
 
-![SearchViewController.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/7e923ea2-f11f-487a-b272-c20816c1932e/854481da-36b2-4ede-b846-74cdfea30af5/SearchViewController.png)
+![SearchViewController](https://github.com/Yeji-Jang1210/Mail-Plug-Pre-Task/assets/62092491/bfe4ebcb-6992-4c0a-a3d9-6f8f3e63c8c7)
 
 SearchViewController는 MainViewController에서 search 버튼을 탭했을 때 나오는 View입니다. 텍스트가 입력되지 않았을 때 EmptyViewController의 View를 띄우도록 구현하였습니다. 
 
